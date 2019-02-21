@@ -1,0 +1,69 @@
+---
+- name: nginx start
+  service: name=nginx state=started
+
+- name: php-fpm start
+  service: name=php-fpm state=started
+  when: ansible_os_family == "RedHat"
+
+- name: mariadb start
+  service: name=mariadb state=started
+  when: ansible_os_family == "RedHat"
+
+- name: mysql start
+  service: name=mysql state=started
+  when: ansible_os_family == "Debian"
+
+- name: Install php modules 7.0/7.1/7.2/7.3
+  apt:
+    name: "{{ packages }}"
+  vars:
+    packages:
+      - php7.0-common
+      - php7.0-cli
+      - php7.0-dev
+      - php7.0-fpm
+      - php7.0-gd
+      - php7.0-curl
+      - php7.0-imap
+      - php7.0-json
+      - php7.0-opcache
+      - php7.0-xml
+      - php7.0-mbstring
+      - php7.0-sqlite3
+      - php7.1-common
+      - php7.1-cli
+      - php7.1-dev
+      - php7.1-fpm
+      - php7.1-gd
+      - php7.1-curl
+      - php7.1-imap
+      - php7.1-json
+      - php7.1-opcache
+      - php7.1-xml
+      - php7.1-mbstring
+      - php7.1-sqlite3
+      - php7.2-common
+      - php7.2-cli
+      - php7.2-dev
+      - php7.2-fpm
+      - php7.2-gd
+      - php7.2-curl
+      - php7.2-imap
+      - php7.2-json
+      - php7.2-opcache
+      - php7.2-xml
+      - php7.2-mbstring
+      - php7.2-sqlite3
+      - php7.3-common
+      - php7.3-cli
+      - php7.3-dev
+      - php7.3-fpm
+      - php7.3-gd
+      - php7.3-curl
+      - php7.3-imap
+      - php7.3-json
+      - php7.3-opcache
+      - php7.3-xml
+      - php7.3-mbstring
+      - php7.3-sqlite3
