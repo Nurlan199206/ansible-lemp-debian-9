@@ -1,4 +1,4 @@
-# nginx-php-fpm installation on CentOS 6/7 or Ubuntu 16.04LTS
+# nginx-php-fpm installation on Debian 9
 
 You need minimum 1GB RAM for succesfully run playbook.
 
@@ -8,7 +8,7 @@ Ansible 2.0.0.2
 
 Centos 6/7
 
-Ubuntu 16.04 LTS
+Debian 9
 
 php 7.0/7.1/7.2/7.3
 
@@ -27,11 +27,11 @@ mkdir /etc/ansible/roles
 
 for Debian like distros
 
-git clone https://github.com/Nurlan199206/ansible-lemp-16-04
+git clone https://github.com/Nurlan199206/ansible-lemp-debian-9
 
 and
 
-ansible-playbook --connection=local -s /etc/ansible/roles/ansible-lemp-16-04/nginx.yml
+ansible-playbook --connection=local -s /etc/ansible/roles/ansible-lemp-debian-9/nginx.yml
 
 
 
