@@ -38,3 +38,16 @@ ansible-playbook --connection=local -s /etc/ansible/roles/ansible-lemp-debian-9/
 for successfully run playbook, dont forget add in /etc/ansible/ansible.cfg after [defaults]
 
 invalid_task_attribute_failed=False
+
+#############Ansible latest version for Debian 9#########################
+Latest Releases via Apt (Debian)
+Debian users may leverage the same source as the Ubuntu PPA.
+
+Add the following line to /etc/apt/sources.list:
+
+deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main
+Then run these commands:
+
+$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367
+$ sudo apt-get update
+$ sudo apt-get install ansible
