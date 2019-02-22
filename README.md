@@ -30,8 +30,9 @@ for Debian like distros
 **git clone https://github.com/Nurlan199206/ansible-lemp-debian-9**
 
 and
-
-**ansible-playbook --connection=local -s /etc/ansible/roles/ansible-lemp-debian-9/nginx.yml**
+```
+ansible-playbook --connection=local -s /etc/ansible/roles/ansible-lemp-debian-9/nginx.yml
+```
 
 
 
@@ -45,11 +46,11 @@ invalid_task_attribute_failed=False
 
 **Add the following line to /etc/apt/sources.list:**
 ```
-**deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main**
+deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main
 
-**$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367**
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367**
 
-**$ sudo apt-get update**
+sudo apt-get update**
 
-**$ sudo apt-get install ansible**
+udo apt-get install ansible
 ```
