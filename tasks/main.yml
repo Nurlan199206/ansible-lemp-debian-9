@@ -78,7 +78,7 @@
        apt: name=mysql-server state=latest
        notify: mysql start
 
-     - name: copy the nginx config fie for default php7.2
+     - name: copy the nginx config file for default php7.2
        copy:
          src: /etc/ansible/roles/ansible-lemp-debian-9/files/ubuntu/default
          dest: /etc/nginx/sites-available/default
