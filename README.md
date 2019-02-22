@@ -14,10 +14,9 @@ nginx 1.10
 
 mysql  Ver 14.14 Distrib 5.7.25
 
-run command: 
+run setup-debian.sh
 
-**apt update && apt install git ansible mc -y**
-mkdir /etc/ansible/roles
+
 
 for Debian like distros
 
