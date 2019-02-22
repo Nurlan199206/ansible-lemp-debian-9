@@ -75,7 +75,7 @@
           mode: 0775
 
      - name: install mysql-server for Debian
-       apt: name=mysql-server state=latest update_cache=yes
+       apt: name=mysql-server state=latest
        notify: mysql start
 
      - name: copy the nginx config fie for default php7.2
