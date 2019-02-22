@@ -6,8 +6,6 @@ Software version.
 
 Ansible 2.0.0.2
 
-Centos 6/7
-
 Debian 9
 
 php 7.0/7.1/7.2/7.3
@@ -16,14 +14,9 @@ nginx 1.10
 
 mysql  Ver 14.14 Distrib 5.7.25
 
-run command: 
+run or create **setup-debian.sh**
 
-**yum install git ansible mc python2-PyMySQL -y**
 
-or
-
-**apt update && apt install git ansible mc -y**
-mkdir /etc/ansible/roles
 
 for Debian like distros
 
@@ -50,7 +43,7 @@ deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main
 
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367
 
-sudo apt-get update
+sudo apt update
 
-udo apt-get install ansible
+sudo apt install ansible
 ```
