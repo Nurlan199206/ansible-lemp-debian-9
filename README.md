@@ -18,7 +18,7 @@ mysql  Ver 14.14 Distrib 5.7.25
 
 run command: 
 
-**yum install git ansible mc python2-PyMySQL -y
+**yum install git ansible mc python2-PyMySQL -y**
 
 or
 
