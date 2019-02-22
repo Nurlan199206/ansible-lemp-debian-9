@@ -14,7 +14,7 @@ nginx 1.10
 
 mysql  Ver 14.14 Distrib 5.7.25
 
-run setup-debian.sh
+run or create **setup-debian.sh**
 
 
 
