@@ -6,8 +6,6 @@ Software version.
 
 Ansible 2.0.0.2
 
-Centos 6/7
-
 Debian 9
 
 php 7.0/7.1/7.2/7.3
@@ -17,10 +15,6 @@ nginx 1.10
 mysql  Ver 14.14 Distrib 5.7.25
 
 run command: 
-
-**yum install git ansible mc python2-PyMySQL -y**
-
-or
 
 **apt update && apt install git ansible mc -y**
 mkdir /etc/ansible/roles
