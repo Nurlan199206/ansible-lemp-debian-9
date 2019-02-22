@@ -22,16 +22,16 @@ run command:
 
 or
 
-**apt update && apt install git ansible mc -y
+**apt update && apt install git ansible mc -y**
 mkdir /etc/ansible/roles
 
 for Debian like distros
 
-**git clone https://github.com/Nurlan199206/ansible-lemp-debian-9
+**git clone https://github.com/Nurlan199206/ansible-lemp-debian-9**
 
 and
 
-**ansible-playbook --connection=local -s /etc/ansible/roles/ansible-lemp-debian-9/nginx.yml
+**ansible-playbook --connection=local -s /etc/ansible/roles/ansible-lemp-debian-9/nginx.yml**
 
 
 
@@ -39,17 +39,17 @@ for successfully run playbook, dont forget add in /etc/ansible/ansible.cfg after
 
 invalid_task_attribute_failed=False
 
-**#############Ansible latest version for Debian 9#########################
+**#############Ansible latest version for Debian 9#########################**
 
-**Debian users may leverage the same source as the Ubuntu PPA.
+**Debian users may leverage the same source as the Ubuntu PPA.**
 
-**Add the following line to /etc/apt/sources.list:
+**Add the following line to /etc/apt/sources.list:**
 
-**deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main
+**deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main**
 Then run these commands:
 
-**$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367
+**$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367**
 
-**$ sudo apt-get update
+**$ sudo apt-get update**
 
-**$ sudo apt-get install ansible
+**$ sudo apt-get install ansible**
