@@ -40,7 +40,7 @@ for successfully run playbook, dont forget add in /etc/ansible/ansible.cfg after
 invalid_task_attribute_failed=False
 
 #############Ansible latest version for Debian 9#########################
-Latest Releases via Apt (Debian)
+
 Debian users may leverage the same source as the Ubuntu PPA.
 
 Add the following line to /etc/apt/sources.list:
