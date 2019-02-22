@@ -46,7 +46,6 @@ invalid_task_attribute_failed=False
 **Add the following line to /etc/apt/sources.list:**
 
 **deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main**
-Then run these commands:
 
 **$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367**
 
